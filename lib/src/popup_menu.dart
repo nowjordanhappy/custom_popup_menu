@@ -6,7 +6,7 @@ import 'menu_layout.dart';
 import 'popup_menu_action.dart';
 
 /// PopupMenu class for display menu.
-class PopupMenu extends MenuLayout {
+class PopupMenu extends CustomMenuLayout {
   /// Popup Menu actions. [PopupAction].
   /// can not be empty or null
   final List<PopupAction> menuActions;
