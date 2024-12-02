@@ -13,11 +13,11 @@ class PopupMenu extends PopupMenuLayout {
 
   /// OnClick menu items
   ///
-  /// return items [int] index [MenuController] menu.
-  /// menu [MenuController] for the close menu box.
+  /// return items [int] index [PopupMenuController] menu.
+  /// menu [PopupMenuController] for the close menu box.
   /// index [int] for which item onClick.
   @override
-  final Function(int index, MenuController menu) onPress;
+  final Function(int index, PopupMenuController menu) onPress;
 
   /// Maximum column length
   /// Default value is 4

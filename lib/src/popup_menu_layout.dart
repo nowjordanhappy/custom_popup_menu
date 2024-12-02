@@ -61,7 +61,7 @@ class PopupMenuLayout extends State<StatefulWidget> with TickerProviderStateMixi
   /// OnClick menu items
   ///
   /// return items index.
-  final Function(int index, MenuController menu) onPress;
+  final Function(int index, PopupMenuController menu) onPress;
 
   /// Behind box popup menu decoration.
   final BoxDecoration decoration;
@@ -118,7 +118,7 @@ class PopupMenuLayout extends State<StatefulWidget> with TickerProviderStateMixi
 
   late Animation<double> _animation;
 
-  late MenuController _menu;
+  late PopupMenuController _menu;
 
   Widget _animatedBuilder(child) {
     return menuBuilder!(context, _animation, child);
@@ -260,7 +260,7 @@ class PopupMenuLayout extends State<StatefulWidget> with TickerProviderStateMixi
   }
 
   void _onClickMenuItem(int index) {
-    _menu = MenuController(_overlayEntry)
+    _menu = PopupMenuController(_overlayEntry)
       .._addListener(
         () {
           _overlayEntry.remove();
@@ -429,9 +429,9 @@ class PopupMenuLayout extends State<StatefulWidget> with TickerProviderStateMixi
   }
 }
 
-class MenuController {
+class PopupMenuController {
   late Function() _close;
-  MenuController(OverlayEntry overlayEntry);
+  PopupMenuController(OverlayEntry overlayEntry);
   _addListener(Function() _close) {
     this._close = _close;
   }
