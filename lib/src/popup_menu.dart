@@ -2,11 +2,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'menu_layout.dart';
+import 'popup_menu_layout.dart';
 import 'popup_menu_action.dart';
 
 /// PopupMenu class for display menu.
-class PopupMenu extends CustomMenuLayout {
+class PopupMenu extends PopupMenuLayout {
   /// Popup Menu actions. [PopupAction].
   /// can not be empty or null
   final List<PopupAction> menuActions;

@@ -10,9 +10,9 @@ import 'queue_painter.dart';
 typedef MenuActionsBuilder = Widget Function(
     BuildContext context, Animation<double> animation, Widget child);
 
-class CustomMenuLayout extends State<StatefulWidget> with TickerProviderStateMixin {
-  /// Constructor [CustomMenuLayout].
-  CustomMenuLayout(
+class PopupMenuLayout extends State<StatefulWidget> with TickerProviderStateMixin {
+  /// Constructor [PopupMenuLayout].
+  PopupMenuLayout(
     this.context,
     this.key, {
     required this.onPress,
